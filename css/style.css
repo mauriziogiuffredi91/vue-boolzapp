@@ -7,4 +7,24 @@
 
 body{
     font-family: 'Lato', sans-serif;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(221,224,219,1) 81%, rgba(50,160,147,1) 81%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
 }
+
+/* app */
+.big-container{
+    width: 80%;
+    height: 94%;
+    background: whitesmoke;
+}
+
+/* left container */
+
+
+/* main container */
+
