@@ -20,7 +20,7 @@ body{
 .big-container{
     width: 70%;
     height: 94%;
-    background: whitesmoke;
+    background: white;
     display: flex;
 }
 
@@ -145,6 +145,38 @@ body{
     
 .left-container .search-chat input:hover{
     background-color: #8080804a;
+}
+
+/* main left side */
+
+
+.left-container .main-left-side li{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid #f6f6f6;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.left-container .main-left-side li:hover{
+    background-color: honeydew;
+} 
+
+
+
+.left-container .main-left-side li:last-child{
+    border: none;
+    
+}
+
+.left-container .main-left-side li img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: #f4f4f4;
 }
     
 /* main container */
