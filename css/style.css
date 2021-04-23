@@ -25,10 +25,13 @@ body{
 }
 
 /* left container */
+
 .left-container{
     width: 40%;
-
+    
 }
+
+/* header left container */
 
 .left-container .header-left-side{
     background-color: #ededed;
@@ -73,6 +76,32 @@ body{
     font-size: 20px;
 }
 
+/* notifiche */
+
+.left-container .notifiche{
+    background-color: #a2dffe;
+    padding: 15px;
+    display: flex;
+}
+
+.left-container .notifiche i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f5fcff;
+    color: #a2dffe;
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    margin-right: 10px;
+    
+}
+
+.left-container .notifiche h5{
+    color: #688ea2;
+    margin-top: 5px;
+    text-decoration: underline;
+}
 /* main container */
 .main-container{
     background-image: url('../img/mine.jpg');
