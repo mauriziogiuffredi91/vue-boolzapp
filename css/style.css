@@ -54,10 +54,11 @@ body{
 /* app */
 .big-container{
     width: 82%;
-    height: 94%;
+    height: 871px;
     background: white;
     display: flex;
 }
+
 
 /* left container */
 
@@ -188,6 +189,7 @@ body{
 .main-container{
     background-image: url('../img/mine.jpg');
     width: 60%;
+    overflow-y: auto;
     
 }
 
@@ -202,6 +204,7 @@ body{
     justify-content: space-between;
     padding: 10px 0;
     border-left: 1px solid #dbdbdb;
+    height: 70px;
 
 }
 
@@ -213,6 +216,9 @@ body{
 
 
 /* main middle side  */
+.main-middle-side{
+    height: calc(871px - 140px);
+}
 .main-middle-side .box-mess-right{
     display: flex;
     justify-content: right;
@@ -260,3 +266,14 @@ body{
 }
 
 
+/* foot middle side */
+.foot-middle-side{
+    background-color: #ededed;
+    height: 70px;
+    
+}
+
+
+/*
+inserire barra per scrivere e i due elementi i interattivi
+*/
