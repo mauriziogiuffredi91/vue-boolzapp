@@ -102,6 +102,51 @@ body{
     margin-top: 5px;
     text-decoration: underline;
 }
+
+/* search chat */
+.left-container .search-chat{
+    background-color: #fbfbfb;
+    padding: 10px;
+    
+}
+
+.left-container .search-chat .search-bar{
+    display: flex;
+    border: 1px solid #f6f6f6;
+    background: #ffffff;
+    
+}
+
+.left-container .search-chat .search-button{
+    border-right: 1px solid #f6f6f6;
+}
+
+.left-container .search-chat .search-button i{
+    color: #bababa;
+    margin: 8px 23px;
+    text-align: center;
+    
+    
+}
+
+.left-container .search-chat input{
+    width: 100%;
+    border: 0px solid;
+    transition: background .3s;
+    padding-left: 10px;
+    font-size: 11px;
+    
+    
+}
+
+.left-container .search-chat input:focus{
+    outline: none;
+}
+    
+.left-container .search-chat input:hover{
+    background-color: #8080804a;
+}
+    
 /* main container */
 .main-container{
     background-image: url('../img/mine.jpg');
