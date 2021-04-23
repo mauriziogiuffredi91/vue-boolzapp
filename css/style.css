@@ -53,7 +53,7 @@ body{
 
 /* app */
 .big-container{
-    width: 70%;
+    width: 82%;
     height: 94%;
     background: white;
     display: flex;
@@ -191,6 +191,9 @@ body{
     
 }
 
+/* header middle side */
+
+
 
 .main-container .header-middle-side{
     background-color: #ededed;
@@ -207,4 +210,53 @@ body{
     color: #688ea2;
     margin-top: 5px;
 }
+
+
+/* main middle side  */
+.main-middle-side .box-mess-right{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    height: 114px; 
+    align-items: end;
+    padding: 10px 85px;
+}
+    
+
+.main-middle-side .box-mess-right .mine-message{
+    background-color: #ddfabf;
+    width: 320px;
+    height: 53px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.main-middle-side h4{
+    text-align: left;
+}
+
+.main-middle-side h6{
+    text-align: right;
+    color: #688ea2;
+    font-size: 10px;
+}
+
+
+.main-middle-side .box-mess-left{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 114px; 
+    align-items: end;
+    padding: 10px 85px;
+}
+
+.main-middle-side .box-mess-left .your-message{
+    background-color: white;
+    width: 320px;
+    height: 53px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 
