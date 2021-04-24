@@ -190,10 +190,10 @@ body{
 .main-container{
     background-image: url('../img/mine.jpg');
     flex-basis: 65%;
-    overflow-y: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
     
 }
 
@@ -220,6 +220,11 @@ body{
 
 
 /* main middle side  */
+.main-middle-side{
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
 
 .main-middle-side .box-mess-right{
     display: flex;
@@ -276,6 +281,3 @@ body{
 }
 
 
-/*
-inserire barra per scrivere e i due elementi i interattivi
-*/
