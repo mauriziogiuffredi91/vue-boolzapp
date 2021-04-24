@@ -276,8 +276,38 @@ body{
 /* foot middle side */
 .foot-middle-side{
     background-color: #ededed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    
     
     
 }
 
+.foot-middle-side input{
+    width: 83%;
+    border: 0px solid;
+    transition: background .3s;
+    padding-left: 30px;
+    font-size: 15px;
+    height: 232%;
+    border-radius: 10px;
+    
+    
+}
+
+.foot-middle-side input:focus{
+    outline: none;
+}
+    
+.foot-middle-side input:hover{
+    background-color: whitesmoke;
+}
+
+.foot-middle-side i{
+    color: #777e82;
+    font-size: 20px;
+    margin: 0 10px;
+}
 
