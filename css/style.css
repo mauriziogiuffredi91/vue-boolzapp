@@ -54,7 +54,8 @@ body{
 /* app */
 .big-container{
     width: 82%;
-    height: 871px;
+    min-width: 900px;
+    height: 95%;
     background: white;
     display: flex;
 }
@@ -63,7 +64,7 @@ body{
 /* left container */
 
 .left-container{
-    width: 40%;
+    flex-basis: 35%;
     
 }
 
@@ -188,8 +189,11 @@ body{
 /* main container */
 .main-container{
     background-image: url('../img/mine.jpg');
-    width: 60%;
+    flex-basis: 65%;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
 }
 
@@ -204,7 +208,7 @@ body{
     justify-content: space-between;
     padding: 10px 0;
     border-left: 1px solid #dbdbdb;
-    height: 70px;
+    
 
 }
 
@@ -216,9 +220,7 @@ body{
 
 
 /* main middle side  */
-.main-middle-side{
-    height: calc(871px - 140px);
-}
+
 .main-middle-side .box-mess-right{
     display: flex;
     justify-content: right;
@@ -269,7 +271,7 @@ body{
 /* foot middle side */
 .foot-middle-side{
     background-color: #ededed;
-    height: 70px;
+    
     
 }
 
