@@ -69,11 +69,16 @@
 
             <section class="main-left-side">
                 <ul>
-                    <li class="avatar 1">
+                    <li v-for='(name, index) in yourPropNameHere'>
+
+                        {{name}}
+                        
+                    </li> 
+                    <!-- <li class="avatar 1">
                         <img src="./img/avatar_1.jpg" alt="avatar 1">
 
                         <h4>Michele</h4>
-                    </li>
+                    </li> -->
 
                     <!-- <li>
                         <img src="./img/avatar_2.jpg" alt="avatar 2">
@@ -92,6 +97,10 @@
 
                         <h4>Luisa</h4>
                     </li> -->
+
+                    
+
+                    </li>
                 </ul>
 
             </section>
