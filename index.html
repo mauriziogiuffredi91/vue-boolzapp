@@ -72,6 +72,8 @@
                     <li v-for='item in yourPropNameHere'>
                         <!-- come printare l'immagine?
                         sfruttare una funzione che sulla base del numero di avatar stampi a ciclo le img? -->
+
+                        <img v-bind:src="'/img/avatar' + yourPropNameHere.avatar + '.jpg'" />
                         <h4>{{item.name}}</h4>
                         
                     </li> 
