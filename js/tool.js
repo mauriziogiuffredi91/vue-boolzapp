@@ -9,7 +9,7 @@ const app = new Vue({
     el: '#app',
     data:{
 
-        yourPropNameHere: [
+        listContact: [
             {
                 name: 'Michele',
                 avatar: '_1',

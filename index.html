@@ -69,10 +69,10 @@
 
             <section class="main-left-side">
                 <ul>
-                    <li v-for='item in yourPropNameHere'>
+                    <li v-for="(item, index) in listContact">
                         <!-- come printare l'immagine?
                         sfruttare una funzione che sulla base del numero di avatar stampi a ciclo le img? -->
-                        <img :src="`./img/' + yourPropNameHere.avatar + .jpg`" />
+                        <img :src="`./img/avatar${listContact.avatar}.jpg`" alt="avatar immagini"/>
 
                         <h4>{{item.name}}</h4>
                         
