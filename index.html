@@ -69,19 +69,19 @@
 
             <section class="main-left-side">
                 <ul>
-                    <li v-for="(item, index) in listContact">
+                    <li v-for="item in listContact">
                         <!-- come printare l'immagine?
                         sfruttare una funzione che sulla base del numero di avatar stampi a ciclo le img? -->
-                        <img :src="`./img/avatar${listContact.avatar}.jpg`" alt="avatar immagini"/>
+                        <img :src="`./img/avatar${item.avatar}.jpg`" alt="avatar immagini"/>
 
                         <h4>{{item.name}}</h4>
                         
                     </li> 
-                    <li class="avatar 1">
+                    <!-- <li class="avatar 1">
                         <img src="./img/avatar_1.jpg" alt="avatar 1">
 
                         <h4>Michele</h4>
-                    </li>
+                    </li> -->
 
                     <!-- <li>
                         <img src="./img/avatar_2.jpg" alt="avatar 2">
