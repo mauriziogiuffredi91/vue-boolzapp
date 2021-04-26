@@ -24,11 +24,9 @@ solo i contatti il cui nome contiene le lettere inserite
 (es, Marco, Matteo Martina -> Scrivo “mar” rimangono solo Marco e Martina)
 
 */
-
 const app = new Vue({
     el: '#app',
-    data:{
-
+    data: {
         listContact: [
             {
                 name: 'Michele',
@@ -114,17 +112,7 @@ const app = new Vue({
                 ],
             },
         ],
-
-        indexContact: 0,
-
     },
-    methods:{
-        dialogue(){
-            //console.log('click');
-
-
-        }
-    }
-    
-    
 });
+
+    
