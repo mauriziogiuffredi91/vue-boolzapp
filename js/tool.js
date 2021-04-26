@@ -112,9 +112,13 @@ const app = new Vue({
                 ],
             },
         ],
-        
+        indexMess: 0,
     },
-    
+    methods:{
+        messPos(index){
+            this.indexMess = index;
+        }
+    },
 });
 
     

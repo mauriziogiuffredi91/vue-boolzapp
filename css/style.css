@@ -226,23 +226,25 @@ body{
     overflow-y: auto;
 }
 
-.box{
-    width: 100%;
-    height: 114px; 
-    padding: 10px 85px;
-}
+
 /* classe dinamica */
 
-.mess-right{
+.messRight{
     display: flex;
     justify-content: right;
     align-items: end;
+    width: 100%;
+    height: 114px; 
+    padding: 10px 85px;
     
 }
     
-.mess-left{
+.messLeft{
     display: flex;
     justify-content: left;
+    width: 100%;
+    height: 114px; 
+    padding: 10px 85px;
     
     
 }
