@@ -69,10 +69,11 @@
 
             <section class="main-left-side">
                 <ul>
-                    <li v-for="item in listContact">
+                    <li v-for="item in listContact"
+                    @click="dialogue" >
                         <!-- come printare l'immagine?
                         sfruttare una funzione che sulla base del numero di avatar stampi a ciclo le img? -->
-                        <img :src="`./img/avatar${item.avatar}.jpg`" alt="avatar immagini"/>
+                        <img :src="`./img/avatar${item.avatar}.jpg`" :alt="item.name"/>
 
                         <h4>{{item.name}}</h4>
                         
@@ -113,14 +114,17 @@
         <!-- corpo centrale messaggi -->
         <section class="main-container">
 
-            <header class="header-middle-side">
-                <div class="img-name">
+            <!-- cambia tutto al click -->
 
-                    <img src="./img/avatar_1.jpg" alt="avatar contatto">
+
+            <header class="header-middle-side">
+                <div v-for="item in listContact" class="img-name">
+
+                    <img :src="`./img/avatar${item.avatar}.jpg`" :alt="item.name">
 
                     <div class="didascalia">
 
-                        <h4>Michele</h4>
+                        <h4>{{item.name}}</h4>
     
                         <h5>Ultimo accesso oggi alle 10:35</h5>
                     </div>
@@ -159,7 +163,7 @@
                     </div>
                 </div>
 
-            </section>
+            </section> 
 
             <footer class="foot-middle-side">
 
