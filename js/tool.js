@@ -113,6 +113,12 @@ const app = new Vue({
             },
         ]
     },
+    methods:{
+        dialogue(){
+            //console.log('click');
+            
+        },
+    }
 });
 
     
