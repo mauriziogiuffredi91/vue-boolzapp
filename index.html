@@ -29,7 +29,7 @@
 
                 <div class="img-name">
 
-                    <img src="./img/avatar_io.jpg" alt="avatar utente">
+                    <img src="./img/avatar_io.jpg" >
     
                     <h4>Nome Utente</h4>
 
@@ -70,13 +70,14 @@
             <section class="main-left-side">
                 <ul>
                     <li v-for="(item, index) in listContact"
-
-                    @click="messaggiPos"
+                    
+                    @click="messaggiPos(index)"
+                    :class=" {active: index == indexMess}"
                     
                     >
                         <!-- come printare l'immagine?
                         sfruttare una funzione che sulla base del numero di avatar stampi a ciclo le img? -->
-                        <img :src="`./img/avatar${item.avatar}.jpg`" :alt="item.name"/>
+                        <img :src="`./img/avatar${item.avatar}.jpg`" />
 
                         <h4>{{item.name}}</h4>
                         
@@ -123,14 +124,16 @@
 
 
             <header class="header-middle-side">
+                
                 <div class="img-name"
                 v-for="(item, index) in listContact"
 
                 v-if="index == indexMess"
                 
+                
                 >
 
-                    <img :src="`./img/avatar${item.avatar}.jpg`" alt="item.avatar">
+                    <img :src="`./img/avatar${item.avatar}.jpg`" alt="">
 
                     <div class="didascalia">
 
@@ -154,10 +157,8 @@
 
             <section  class="main-middle-side">
 
-                <div 
-                v-for="item in listContact[indexMess].messages" 
-                :class="{ mess-right: item.status == 'sent' }"
-                > 
+                <div class="box" v-for="item in listContact[indexMess].messages" 
+                :class="{ mess-right: item.status == 'sent' }"> 
 
                     <div class="mine-message">
                         <h4>It's me</h4>
