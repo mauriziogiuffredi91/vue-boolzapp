@@ -115,11 +115,10 @@ const app = new Vue({
         indexMess: 0,
     },
     methods:{
-        dialogue(){
-            console.log('click');
-
-        },
-    }
+        messaggiPos(index){
+            this.indexMess = index;
+        }
+    },
 });
 
     
