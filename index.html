@@ -146,10 +146,12 @@
 
             <section v-for="item in listContact[0].messages" class="main-middle-side">
 
-                <div  :class="box-mess-right">
+                <div  
+                :class="{ mess-right: status == 'sent' }"
+                > 
 
                     <div class="mine-message">
-                        <h4></h4>
+                        <h4>It's me</h4>
                         <h6></h6>
                     </div>
 

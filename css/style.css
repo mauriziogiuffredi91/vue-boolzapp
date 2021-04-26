@@ -226,15 +226,26 @@ body{
     overflow-y: auto;
 }
 
-.main-middle-side .box-mess-right{
+
+/* classe dinamica */
+
+.mess-right{
     display: flex;
     justify-content: right;
+    align-items: end;
     width: 100%;
     height: 114px; 
-    align-items: end;
     padding: 10px 85px;
 }
     
+.mess-left{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 114px; 
+    padding: 10px 85px;
+    
+}
 
 .main-middle-side .box-mess-right .mine-message{
     background-color: #ddfabf;
@@ -255,13 +266,6 @@ body{
 }
 
 
-.main-middle-side .box-mess-left{
-    display: flex;
-    justify-content: left;
-    width: 100%;
-    height: 114px; 
-    padding: 10px 85px;
-}
     
 
 .main-middle-side .box-mess-left .your-message{
