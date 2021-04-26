@@ -69,15 +69,15 @@
 
             <section class="main-left-side">
                 <ul>
-                    <li v-for="(item, index) in listContact"
+                    <li v-for="(item, index) in listContact">
                     
-                    @click="messaggiPos(index)"
-                    :class=" {active: index == indexMess}"
                     
-                    >
+                    
+                    
+                    
                         <!-- come printare l'immagine?
                         sfruttare una funzione che sulla base del numero di avatar stampi a ciclo le img? -->
-                        <img :src="`./img/avatar${item.avatar}.jpg`" />
+                        <img :src="`./img/avatar${item.avatar}.jpg`" >
 
                         <h4>{{item.name}}</h4>
                         
@@ -110,7 +110,7 @@
 
                     
 
-                    </li>
+                    
                 </ul>
 
             </section>
@@ -125,19 +125,13 @@
 
             <header class="header-middle-side">
                 
-                <div class="img-name"
-                v-for="(item, index) in listContact"
+                <div class="img-name">
 
-                v-if="index == indexMess"
-                
-                
-                >
-
-                    <img :src="`./img/avatar${item.avatar}.jpg`" alt="">
+                    <img src="./img/avatar_io.jpg" alt="">
 
                     <div class="didascalia">
 
-                        <h4>{{item.name}}</h4>
+                        <h4>Michele</h4>
     
                         <h5>Ultimo accesso oggi alle 10:35</h5>
                     </div>
@@ -157,12 +151,11 @@
 
             <section  class="main-middle-side">
 
-                <div class="box" v-for="item in listContact[indexMess].messages" 
-                :class="{ mess-right: item.status == 'sent' }"> 
+                <div>  
+                
 
                     <div class="mine-message">
-                        <h4>It's me</h4>
-                        <h6></h6>
+                        
                     </div>
 
                     

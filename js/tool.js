@@ -112,14 +112,9 @@ const app = new Vue({
                 ],
             },
         ],
-        indexMess: 0,
+        
     },
-    methods:{
-        messaggiPos(index){
-            this.indexMess = index;
-            
-        }
-    },
+    
 });
 
     
