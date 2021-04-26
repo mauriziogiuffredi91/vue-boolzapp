@@ -142,13 +142,13 @@
 
             </header>
 
-            <section class="main-middle-side">
+            <section  v-for="item in listContact" class="main-middle-side">
 
-                <div class="box-mess-right">
+                <div  class="box-mess-right">
 
                     <div class="mine-message">
-                        <h4>Messaggio inviato</h4>
-                        <h6>10/01/2021 15:50.00</h6>
+                        <h4>{{item.message}}</h4>
+                        <h6>{{item.date}}</h6>
                     </div>
 
                     
@@ -157,8 +157,8 @@
                 <div class="box-mess-left">
                     
                     <div class="your-message">
-                        <h4>Messaggio ricevuto</h4>
-                        <h6>10/01/2021 15:50.00</h6>
+                        <h4>{{item.message}}</h4>
+                        <h6>{{item.date}}</h6>
 
                     </div>
                 </div>

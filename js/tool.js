@@ -115,6 +115,8 @@ const app = new Vue({
             },
         ],
 
+        indexContact: 0,
+
     },
     methods:{
         dialogue(){
