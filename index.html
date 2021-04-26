@@ -152,11 +152,12 @@
             <section  class="main-middle-side">
 
                 <div v-for="item in listContact[indexMess].messages"
-                :class="{messRight: item.status == 'sent' }"
+                :class="{messLeft: item.status == 'sent' }"
                 >  
                 
 
-                    <div class="mine-message">
+                    <div class="your-message"
+                    v-if="">
                         <h4>{{item.message}}</h4>
 
                         <h6>{{item.date}}</h6>
