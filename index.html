@@ -69,8 +69,7 @@
 
             <section class="main-left-side">
                 <ul>
-                    <li v-for="item in listContact"
-                    @click="dialogue" >
+                    <li v-for="item in listContact">
                         <!-- come printare l'immagine?
                         sfruttare una funzione che sulla base del numero di avatar stampi a ciclo le img? -->
                         <img :src="`./img/avatar${item.avatar}.jpg`" :alt="item.name"/>
@@ -122,7 +121,7 @@
             <header class="header-middle-side">
                 <div class="img-name">
 
-                    <img src="./img/avatar_io.jpg" :alt="item.name">
+                    <img src="./img/avatar_io.jpg" alt="item">
 
                     <div class="didascalia">
 
