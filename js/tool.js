@@ -113,6 +113,8 @@ const app = new Vue({
             },
         ],
         indexMess: 0,
+
+        messageRisp: '',
     },
     methods:{
         messPos(index){
@@ -123,7 +125,7 @@ const app = new Vue({
         },
 
 
-        
+
     }
 
 

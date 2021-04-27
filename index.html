@@ -174,10 +174,32 @@
                     </div>
 
                     
-
+                    
+                    
                     
                 </div>
-                    
+                
+                <!-- 
+                    1 - la possibilità di inserire un riquadro con v-model 
+
+                    2 - collegare il riquadro a uno scrivere
+
+                    3 - in ogni chat i riquadri devono essere da capo visibili
+                
+                
+                
+                
+                -->
+                <div :class="messRight"
+                >
+
+                    <div class="message mine">
+                        <h4>{{messageRisp}}</h4>
+
+                    </div>
+
+
+                </div>
                     
             </section> 
 
@@ -187,8 +209,8 @@
 
                 
 
-                <input v-model="message" placeholder="edit me">
-                <p>Message is: {{ message }}</p>
+                <input v-model="messageRisp" placeholder="Scrivi un messaggio">
+                
                 
 
 
