@@ -136,23 +136,32 @@ const app = new Vue({
             //console.log(this.listContact[0].messages);
             
             
+            if(this.messageRisp !== ''){
 
-            this.listContact[0].messages.push({
+                this.listContact[this.indexMess].messages.push({
+    
+                    date: '27/04/2021',
+                    message: this.messageRisp,
+                    status: 'sent',
+    
+                });
+                
+                this.messageRisp = '';
+                //per il focus
+                this.$refs.itemInput.focus();
 
-                date: '27/04/2021',
-                message: this.messageRisp,
-                status: 'sent',
 
-            });
+            }
 
-            //per il focus
-            this.$refs.itemInput.focus();
+
         
 
 
             
             
         },
+
+        
 
 
 
