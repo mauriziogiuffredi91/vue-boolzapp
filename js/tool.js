@@ -24,6 +24,13 @@ solo i contatti il cui nome contiene le lettere inserite
 (es, Marco, Matteo Martina -> Scrivo “mar” rimangono solo Marco e Martina)
 
 */
+
+//dayjs.plugin
+dayjs.extend(dayjs_plugin_customParseFormat);
+
+//remember of this
+
+
 const app = new Vue({
     el: '#app',
     data: {
@@ -143,7 +150,7 @@ const app = new Vue({
 
                 this.listContact[this.indexMess].messages.push({
     
-                    date: this.dayjs(),
+                    date: dayjs().format('HH:m:s'),
                     message: this.messageRisp,
                     status: 'sent',
     
@@ -163,7 +170,7 @@ const app = new Vue({
                 //funziona
                 this.listContact[this.indexMess].messages.push({
     
-                    date: this.dayjs(),
+                    date: dayjs().format('HH:m:s'),
                     message: 'Ok, va bene',
                     status: 'received',
     
