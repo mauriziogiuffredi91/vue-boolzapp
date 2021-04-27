@@ -137,7 +137,7 @@ const app = new Vue({
             
             
 
-            this.listContact[indexMess].messages.push({
+            this.listContact[0].messages.push({
 
                 date: '27/04/2021',
                 message: this.messageRisp,
