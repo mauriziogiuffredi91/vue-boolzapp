@@ -250,7 +250,7 @@ body{
     
 }
 
-/* crea classe generale e poi applica v-if */
+
 .main-middle-side .message{
     width: 320px;
     height: 53px;
@@ -269,7 +269,7 @@ body{
     font-size: 10px;
 }
 
-/* v-if */
+
 .main-middle-side .mine{
     background-color: #ddfabf;
 }
