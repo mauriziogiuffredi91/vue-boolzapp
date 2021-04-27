@@ -115,6 +115,10 @@ const app = new Vue({
         indexMess: 0,
 
         messageRisp: '',
+
+        
+
+
     },
     methods:{
         messPos(index){
@@ -124,9 +128,26 @@ const app = new Vue({
             //console.log(this.listContact[this.indexMess]);
         },
 
+
+        //Tutto questo andrà chiuso in una funzione a tempo
         newArgument(){
-            console.log('enter');
-        }
+            //console.log('enter');
+
+            //console.log(this.listContact[0].messages);
+            this.listContact.messages.push({
+
+                date: '27/04/2021',
+                message: this.messageRisp,
+                status: 'sent',
+
+            });
+
+            this.$refs.itemInput.focus();
+            
+
+
+            //per il focus
+        },
 
 
 
