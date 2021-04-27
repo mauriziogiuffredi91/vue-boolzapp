@@ -145,11 +145,11 @@ const app = new Vue({
 
             });
 
+            //per il focus
             this.$refs.itemInput.focus();
         
 
 
-            //per il focus
             
             
         },
