@@ -122,6 +122,8 @@ const app = new Vue({
             //console.log(this.listContact[this.indexMess]);
         }
     },
+
+    
 });
 
     
