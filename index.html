@@ -160,12 +160,12 @@
 
                 <div v-for="item in listContact[indexMess].messages"
                 :class="{messLeft: item.status == 'sent' }"
-                :class="{messRight: item.status == 'received' }"
+                
                 >  
                 
                     <!-- your message green  mine message gray-->
                     <div class="message "
-                    :class="{mine: item.status == 'sent'}"
+                    v-if="item.status == 'sent'"
                     
                     >
                     
@@ -175,7 +175,7 @@
                     </div>
 
                     <div class="message"
-                    :class="{your: item.status == 'received'}"
+                    v-else="item.status == 'received'"
                     >
                         <h4>{{item.message}}</h4>
 
@@ -186,6 +186,35 @@
                     
                    
                 </div>
+
+                <div v-for="item in listContact[indexMess].messages"
+                :class="{messRight: item.status == 'received' }"
+                
+                >  
+                
+                    
+                    <div class="message mine "
+                    v-if="item.status == 'sent'"
+                    
+                    >
+                    
+                        <h4>{{item.message}}</h4>
+
+                        <h6>{{item.date}}</h6>
+                    </div>
+
+                    <div class="message your"
+                    v-else="item.status == 'received'"
+                    >
+                        <h4>{{item.message}}</h4>
+
+                        <h6>{{item.date}}</h6>
+                    </div>
+
+
+                    
+                   
+                </div> 
 
                 
 
