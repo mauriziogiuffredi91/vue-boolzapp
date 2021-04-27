@@ -134,7 +134,10 @@ const app = new Vue({
             //console.log('enter');
 
             //console.log(this.listContact[0].messages);
-            this.listContact.messages.push({
+            
+            
+
+            this.listContact[indexMess].messages.push({
 
                 date: '27/04/2021',
                 message: this.messageRisp,
@@ -143,10 +146,12 @@ const app = new Vue({
             });
 
             this.$refs.itemInput.focus();
-            
+        
 
 
             //per il focus
+            
+            
         },
 
 
