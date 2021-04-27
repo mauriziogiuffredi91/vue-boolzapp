@@ -159,75 +159,22 @@
             <section  class="main-middle-side">
 
                 <div v-for="item in listContact[indexMess].messages"
-                :class="{messLeft: item.status == 'sent' }"
+                :class="item.status == 'sent' ?  'messRight' : 'messLeft' "
                 
                 >  
                 
                     <!-- your message green  mine message gray-->
-                    <div class="message "
-                    v-if="item.status == 'sent'"
-                    
-                    >
+                    <div class="message ">
                     
                         <h4>{{item.message}}</h4>
 
                         <h6>{{item.date}}</h6>
                     </div>
 
-                    <div class="message"
-                    v-else="item.status == 'received'"
-                    >
-                        <h4>{{item.message}}</h4>
-
-                        <h6>{{item.date}}</h6>
-                    </div>
-
-
                     
-                   
                 </div>
-
-                <div v-for="item in listContact[indexMess].messages"
-                :class="{messRight: item.status == 'received' }"
-                
-                >  
-                
                     
-                    <div class="message mine "
-                    v-if="item.status == 'sent'"
                     
-                    >
-                    
-                        <h4>{{item.message}}</h4>
-
-                        <h6>{{item.date}}</h6>
-                    </div>
-
-                    <div class="message your"
-                    v-else="item.status == 'received'"
-                    >
-                        <h4>{{item.message}}</h4>
-
-                        <h6>{{item.date}}</h6>
-                    </div>
-
-
-                    
-                   
-                </div> 
-
-                
-
-                
-            
-            
-            
-            
-                
-
-                
-                  
-
             </section> 
 
             <footer class="foot-middle-side">
@@ -250,6 +197,26 @@
     <script src="./js/tool.js"></script>
 </body>
 </html>
+
+
+                    
+                   
+                    
+
+                
+
+                
+
+                
+            
+            
+            
+            
+                
+
+                
+                  
+
                         
                             
                         

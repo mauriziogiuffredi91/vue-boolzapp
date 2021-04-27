@@ -234,8 +234,6 @@ body{
     justify-content: right;
     align-items: end;
     width: 100%;
-    height: 114px; 
-    padding: 10px 85px;
     
 }
     
@@ -243,37 +241,41 @@ body{
     display: flex;
     justify-content: left;
     width: 100%;
-    height: 114px; 
-    padding: 10px 85px;
+    
     
     
     
 }
 
+.message{
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 328px;
+}
+
+.messRight .message{
+    background-color: #ddfabf;
+}
 
 
-    
+.messLeft .message {
+    background-color: white;
+} 
 
 .main-middle-side h4{
     text-align: left;
+    padding: 5px;
 }
 
 .main-middle-side h6{
     text-align: right;
     color: #688ea2;
     font-size: 10px;
+    padding: 5px;
 }
 
 
-.main-middle-side .mine{
-    background-color: #ddfabf;
-}
-    
-
-.main-middle-side .your{
-    background-color: white;
-    
-}
 
 
 /* foot middle side */
