@@ -116,7 +116,10 @@ const app = new Vue({
     },
     methods:{
         messPos(index){
+            //console.log(index);
             this.indexMess = index;
+
+            //console.log(this.listContact[this.indexMess]);
         }
     },
 });
