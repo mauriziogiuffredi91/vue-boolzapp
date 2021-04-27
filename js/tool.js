@@ -120,10 +120,13 @@ const app = new Vue({
             this.indexMess = index;
 
             //console.log(this.listContact[this.indexMess]);
-        }
-    },
+        },
 
-    
+
+        
+    }
+
+
 });
 
     
