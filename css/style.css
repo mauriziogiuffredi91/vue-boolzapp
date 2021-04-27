@@ -251,12 +251,7 @@ body{
 }
 
 
-.main-middle-side .message{
-    width: 320px;
-    height: 53px;
-    border-radius: 10px;
-    padding: 10px;
-}
+
     
 
 .main-middle-side h4{
@@ -272,11 +267,19 @@ body{
 
 .main-middle-side .mine{
     background-color: #ddfabf;
+    width: 320px;
+    height: 53px;
+    border-radius: 10px;
+    padding: 10px;
 }
     
 
 .main-middle-side .your{
     background-color: white;
+    width: 320px;
+    height: 53px;
+    border-radius: 10px;
+    padding: 10px;
     
 }
 
