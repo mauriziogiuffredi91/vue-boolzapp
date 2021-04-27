@@ -124,6 +124,10 @@ const app = new Vue({
             //console.log(this.listContact[this.indexMess]);
         },
 
+        newArgument(){
+            console.log('enter');
+        }
+
 
 
     }

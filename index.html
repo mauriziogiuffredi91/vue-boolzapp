@@ -190,16 +190,7 @@
                 
                 
                 -->
-                <div :class="messRight"
-                >
-
-                    <div class="message mine">
-                        <h4>{{messageRisp}}</h4>
-
-                    </div>
-
-
-                </div>
+                
                     
             </section> 
 
@@ -209,7 +200,11 @@
 
                 
 
-                <input v-model="messageRisp" placeholder="Scrivi un messaggio">
+                <input type="text"
+                v-model.trim="messageRisp" 
+                @keyup.enter="newArgument"
+                placeholder="Scrivi un messaggio"
+                >
                 
                 
 
