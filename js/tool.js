@@ -150,7 +150,7 @@ const app = new Vue({
 
                 this.listContact[this.indexMess].messages.push({
     
-                    date: dayjs().format('HH:m:s'),
+                    date: dayjs().format('HH:mm:s'),
                     message: this.messageRisp,
                     status: 'sent',
     
@@ -170,7 +170,7 @@ const app = new Vue({
                 //funziona
                 this.listContact[this.indexMess].messages.push({
     
-                    date: dayjs().format('HH:m:s'),
+                    date: dayjs().format('HH:mm:s'),
                     message: 'Ok, va bene',
                     status: 'received',
     
