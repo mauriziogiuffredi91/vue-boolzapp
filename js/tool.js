@@ -128,6 +128,9 @@ const app = new Vue({
             //console.log(this.listContact[this.indexMess]);
         },
 
+        
+        
+        
 
         //Tutto questo andrà chiuso in una funzione a tempo
         newArgument(){
@@ -154,12 +157,30 @@ const app = new Vue({
             }
 
 
-        
+            //creare la risposta automatica
+            setTimeout(() =>{
+                //console.log('stop');
+                //funziona
+                this.listContact[this.indexMess].messages.push({
+    
+                    date: '27/04/2021',
+                    message: 'Ok, va bene',
+                    status: 'received',
+    
+                });
 
+            },3000)
 
             
             
         },
+
+        
+
+        
+
+        
+        
 
         
 
