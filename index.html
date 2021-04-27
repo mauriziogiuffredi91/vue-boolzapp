@@ -163,7 +163,9 @@
                 >  
                 
                     <!-- your message green  mine message gray-->
-                    <div class="message mine">
+                    <div class="message"
+                    :class="{mine: item.status == 'sent' }"
+                    >
                     
                         <h4>{{item.message}}</h4>
 
@@ -171,17 +173,7 @@
                     </div>
 
 
-                    <div class="message your">
-                    
-                    
-
-                        <h4>{{item.message}}</h4>
-
-                        <h6>{{item.date}}</h6>
-
-                
-                
-                    </div>
+                   
                 </div>
 
                 <div v-for="item in listContact[indexMess].messages"
@@ -189,16 +181,12 @@
                 >  
             
                     <!-- your message green  mine message gray-->
-                    <div class="message mine">
                     
-                    
-                        <h4>{{item.message}}</h4>
-
-                        <h6>{{item.date}}</h6>
-                    </div>
 
 
-                    <div class="message your">
+                    <div class="message"
+                    :class="{your: item.status == 'received' }"
+                    >
                     
                     
 
