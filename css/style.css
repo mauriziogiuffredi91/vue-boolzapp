@@ -298,6 +298,7 @@ body{
     font-size: 15px;
     height: 232%;
     border-radius: 10px;
+    white-space: pre-line;
     
     
 }

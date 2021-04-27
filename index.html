@@ -163,7 +163,7 @@
                 
                 >  
                 
-                    <!-- your message green  mine message gray-->
+                    <!-- your message green  mine message gray()-->
                     <div class="message ">
                     
                         <h4>{{item.message}}</h4>
@@ -181,7 +181,10 @@
 
                 <i class="fas fa-smile-wink"></i>
 
-                <input type="text" placeholder="Scrivi un messaggio">
+                
+
+                <input v-model="message" placeholder="Scrivi un messaggio">
+                <p>{{ message }}</p>
 
                 <i class="fas fa-microphone"></i>
 
