@@ -23,6 +23,8 @@ Ricerca utenti: scrivendo qualcosa nell’input a sinistra, vengono visualizzati
 solo i contatti il cui nome contiene le lettere inserite 
 (es, Marco, Matteo Martina -> Scrivo “mar” rimangono solo Marco e Martina)
 
+Possibilità di selezionare poi la chat
+
 */
 
 //dayjs.plugin
@@ -133,6 +135,7 @@ const app = new Vue({
 
 
     },
+    //rimette la lista
     mounted(){
         this.resultName()
         //console.log("mounted");
@@ -150,7 +153,7 @@ const app = new Vue({
         
         
         
-
+        //inserimento risposta
         //Tutto questo andrà chiuso in una funzione a tempo
         newArgument(){
             //console.log('enter');
@@ -194,13 +197,16 @@ const app = new Vue({
             
         },
         
+        //funzione per cercare la chat
         resultName(){
 
             if(this.searchName.length > 0){
                 
                 this.newList= this.listContact.filter((contact) => {
-        
+                    
                     return contact.name.toLowerCase().includes(this.searchName.toLowerCase())
+
+                    
         
                     
                 })
@@ -209,9 +215,13 @@ const app = new Vue({
                 this.newList = this.listContact
             }
             
+            
         }
 
-        
+
+
+
+       
 
         
 
