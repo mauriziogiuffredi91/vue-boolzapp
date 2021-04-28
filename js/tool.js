@@ -190,13 +190,15 @@ const app = new Vue({
 
         resultName(){
 
-            
+            this.listContact.forEach((name, index) => {
 
-            if(this.listContact.includes(this.searchName) ){
-                console.log(this.listContact.name);
-            }
+                if(this.listContact.includes(this.searchName) ){
+                    console.log(this.listContact.name);
+                }
+    
+                console.log('no-name');
+            })
 
-            console.log('no-name');
             
         }
 
