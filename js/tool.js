@@ -208,7 +208,7 @@ const app = new Vue({
             }else {
                 this.newList = this.listContact
             }
-            console.log(this.newList);
+            
         }
 
         
