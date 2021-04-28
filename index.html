@@ -60,9 +60,9 @@
                 <div class="search-bar">
                     
                     <div class="search-button">
-                        <i class="fas fa-search"
-                            @click="resultName()"
-                        ></i>
+                        <i class="fas fa-search"></i>
+                            
+                        
                     </div>
                     <!-- 
                         A questo punto ultima task
@@ -76,6 +76,8 @@
                     <input type="text" 
                         placeholder="Cerca o inizia una nuova chat"
                         v-model.trim="searchName" 
+
+                        
                         
                     >
                     
@@ -88,6 +90,8 @@
                         @click="messPos(index)"
                         
                         :class="{ active: index === indexMess }" 
+
+                        v-if="{listContact.name.includes(searchName)}"
 
                     >
                         
