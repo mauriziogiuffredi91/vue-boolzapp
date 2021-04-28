@@ -62,7 +62,15 @@
                     <div class="search-button">
                         <i class="fas fa-search"></i>
                     </div>
-                    
+                    <!-- 
+                        A questo punto ultima task
+
+                        1 ricerca per nomi all'interno dell'array di oggetti
+
+                        2 includes per trovare l'oggetto desiderato, anche grazie alle iniziali
+
+                        3 add tasto per risultati??
+                     -->
                     <input type="text" placeholder="Cerca o inizia una nuova chat">
                 </div>
             </section>
@@ -71,10 +79,10 @@
                 <ul>
                     <li v-for="(item, index) in listContact"
                         @click="messPos(index)"
-                        :class="{ active: index === indexMess }"
-                    
+                        
+                        :class="{ active: index === indexMess }" 
                     >
-                    
+                        
                     
                     
                     

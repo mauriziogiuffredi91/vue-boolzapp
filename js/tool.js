@@ -132,9 +132,11 @@ const app = new Vue({
             //console.log(index);
             this.indexMess = index;
 
-            //console.log(this.listContact[this.indexMess]);
+
+            //console.log(this.indexMess);
         },
 
+        
         
         
         
