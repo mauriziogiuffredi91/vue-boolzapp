@@ -125,11 +125,17 @@ const app = new Vue({
 
         searchName: '',
 
-        
+        newList: [],
 
         
 
+        
 
+
+    },
+    mounted(){
+        this.resultName()
+        //console.log("mounted");
     },
     methods:{
         messPos(index){
@@ -187,22 +193,25 @@ const app = new Vue({
             
             
         },
-
+        
         resultName(){
 
-            this.listContact.forEach((name, index) => {
-
-                if(this.listContact.includes(this.searchName) ){
-                    console.log(this.listContact.name);
-                }
-    
-                console.log('no-name');
-            })
-
-            
+            if(this.searchName.length > 0){
+                
+                this.newList= this.listContact.filter((contact) => {
+        
+                    return contact.name.toLowerCase().includes(this.searchName.toLowerCase())
+        
+                    
+                })
+                
+            }else {
+                this.newList = this.listContact
+            }
+            console.log(this.newList);
         }
 
-
+        
 
         
 
