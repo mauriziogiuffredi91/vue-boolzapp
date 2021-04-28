@@ -60,18 +60,25 @@
                 <div class="search-bar">
                     
                     <div class="search-button">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-search"
+                            @click="resultName()"
+                        ></i>
                     </div>
                     <!-- 
                         A questo punto ultima task
 
-                        1 ricerca per nomi all'interno dell'array di oggetti
+                        1 ricerca per nomi all'interno dell'array di oggetti, il sistema è lo stesso dell'input preceente
 
                         2 includes per trovare l'oggetto desiderato, anche grazie alle iniziali
 
                         3 add tasto per risultati??
                      -->
-                    <input type="text" placeholder="Cerca o inizia una nuova chat">
+                    <input type="text" 
+                        placeholder="Cerca o inizia una nuova chat"
+                        v-model.trim="searchName" 
+                        
+                    >
+                    
                 </div>
             </section>
 
@@ -81,6 +88,7 @@
                         @click="messPos(index)"
                         
                         :class="{ active: index === indexMess }" 
+
                     >
                         
                     

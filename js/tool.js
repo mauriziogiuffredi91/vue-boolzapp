@@ -123,6 +123,10 @@ const app = new Vue({
 
         messageRisp: '',
 
+        searchName: '',
+
+        
+
         
 
 
@@ -183,6 +187,16 @@ const app = new Vue({
             
             
         },
+
+        resultName(){
+            if(this.listContact.includes(this.searchName) ){
+                console.log(this.listContact.name);
+            }
+
+            console.log(this.searchName);
+        }
+
+
 
         
 
