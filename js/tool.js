@@ -196,7 +196,7 @@ const app = new Vue({
                 console.log(this.listContact.name);
             }
 
-            console.log(this.searchName);
+            console.log('no-name');
             
         }
 
